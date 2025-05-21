@@ -1,0 +1,28 @@
+load("@rules_cc//cc:cc_library.bzl", "cc_library")
+
+POCKETPY_SRCS = glob(["src/**/*.c"])
+
+POCKETPY_HDRS = glob(
+    [
+        "include/pocketpy/**/*.h",
+        "include/pybind11/*.h",
+        "include/pybind11/internal/**/*.h",
+    ],
+) + ["include/pocketpy.h"]
+
+POCKETPY_COPTS = select({
+    "@platforms//os:windows": [
+        "/utf-8",
+        "/experimental:c11atomics",
+    ],
+    "//conditions:default": ["-std=c11"],
+})
+
+cc_library(
+    name = "pocketpy",
+    srcs = POCKETPY_SRCS,
+    hdrs = POCKETPY_HDRS,
+    copts = POCKETPY_COPTS,
+    includes = ["include"],
+    visibility = ["//visibility:public"],
+)

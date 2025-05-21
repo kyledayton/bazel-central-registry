@@ -1,0 +1,9 @@
+{
+  "integrity": "sha256-T1+t4Kh0HhC5pzh2DAZgTJDeNS6DlmHCoYRja6zWpSo=",
+  "url": "https://github.com/pocketpy/pocketpy/archive/refs/tags/v2.0.8.zip",
+  "strip_prefix": "pocketpy-2.0.8",
+  "overlay": {
+    "BUILD.bazel": "sha256-ncPMAuhCIG7VqBjAMnad6EWaJZgzgjHGhM28lgaSxUA=",
+    "MODULE.bazel": "sha256-q7QIWFMWpNi4jROSg9FM+CS4BFATpDVRoP0SkcYZum4="
+  }
+}

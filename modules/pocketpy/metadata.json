@@ -1,0 +1,18 @@
+{
+  "homepage": "https://github.com/pocketpy/pocketpy",
+  "maintainers": [
+    {
+      "name": "Kyle Dayton",
+      "email": "kyle+bcr@30northdigital.com",
+      "github": "kyledayton",
+      "github_user_id": 1011026
+    }
+  ],
+  "repository": [
+    "github:pocketpy/pocketpy"
+  ],
+  "versions": [
+    "2.0.8"
+  ],
+  "yanked_versions": {}
+}
